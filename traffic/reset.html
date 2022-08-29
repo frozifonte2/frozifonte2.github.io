@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/sharkR.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Восстановление пароля</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="pic"></div>
+    </div>
+<header class="header">
+        <div class="container">
+            <div class="header__items">
+                <div class="header__item">
+                    <a href="index.html"><img src="images/logo.svg" alt="" class="header__pic"></a>
+                </div>
+                <div class="header__item">
+                    <ul class="header__navs">
+                        <li><a href="index.html" class="header__nav">Вебмастерам</a></li>
+                        <li><a href="ad.html" class="header__nav">Рекламодателям</a></li>
+                    </ul>
+
+                    <div class="header__auth">
+                        <a href="login.html" class="header__login">Вход</a>
+                        <a href="register.html" class="header__login">Регистрация</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="input">
+        <div class="container">
+            <h2 class="lg__title input__title">Восстановление пароля</h2>
+            <div class="input__wrapper">
+                <form>
+                    <label style="color:#fff; font-size: 20px; display: block; text-align: center; text-transform: uppercase; font-family:'GilroyB';" for="">Введите email от аккаунта</label>
+                    <input type="text" name="email" class="form__input mg20" required placeholder="Email" autocomplete="email" autofocus>
+                    <button type="submit" class=" form__button button">Отправить ссылку</button>
+                </form>
+            </div>
+        </div>
+    </main>
+  <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script>
+        $(window).on('load', function () {
+            $preloader = $('.preloader');
+            $loader = $preloader.find('.pic');
+            $loader.fadeOut();
+            $preloader.delay(350).fadeOut('slow');
+        });
+    </script>
+</body>
+</html>

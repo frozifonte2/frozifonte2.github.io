@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/sharkR.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Авторизация</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="pic"></div>
+    </div>
+<header class="header">
+        <div class="container">
+            <div class="header__items">
+                <div class="header__item">
+                    <a href="index.html"><img src="images/logo.svg" alt="" class="header__pic"></a>
+                </div>
+                <div class="header__item">
+                    <ul class="header__navs">
+                        <li><a href="index.html" class="header__nav">Вебмастерам</a></li>
+                        <li><a href="ad.html" class="header__nav">Рекламодателям</a></li>
+                    </ul>
+
+                    <div class="header__auth">
+                        <a href="login.html" class="header__login active">Вход</a>
+                        <a href="register.html" class="header__login">Регистрация</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="input">
+        <div class="container">
+            <h2 class="lg__title input__title">Авторизация</h2>
+            <div class="input__wrapper">
+                <form>
+                    <input type="text" name="email" class="form__input mg20" required placeholder="E-mail" autocomplete="email" autofocus>
+                    <input type="password" name="password" class="form__input mg20" placeholder="Пароль" required autocomplete="current-password">
+                    <button type="submit" class=" form__button button">Войти</button>
+                </form>
+                <div class="input__list">
+                    <label class="switch">
+                         <input class="switch__input " name="remember" type="checkbox" id="togBtn">
+                         <div class="slider round"></div>
+                    </label>
+                    <span class="input__text">Запомнить меня</span>
+                </div>
+                <div class="input__items">
+                    <a href="reset.html" class="input__link">Забыли пароль?</a>
+                    <a href="register.html" class="input__link">Создать аккаунт</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script>
+        $(window).on('load', function () {
+            $preloader = $('.preloader');
+            $loader = $preloader.find('.pic');
+            $loader.fadeOut();
+            $preloader.delay(350).fadeOut('slow');
+        });
+    </script>
+</body>
+</html>
