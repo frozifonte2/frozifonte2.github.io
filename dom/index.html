@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<link rel="icon" type="image/png" href="images/LOGO.png">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Дом еды</title>
+</head>
+<body>
+	<div class="preloadOverlay">
+		<div class="preload"></div>
+	</div>
+	<div class="popup">
+		<div class="popup__wrapper">
+						<form class="popup__form" method="POST">
+							<span class="popup__cancel">&#x2715</span>
+							<input type="text" class="popup__input _req name" name="name" placeholder="Введите ваше имя" required min="1" max="11">
+							<input type="text" class="popup__input _req" name="tel" id="phone_mask" placeholder="Номер телефона" required pattern="">
+							<button class="button popup__button pu" type="submit">Заказ столика</button>
+						</form>
+				
+			
+
+			<div class="popup__text">
+				<p>Спасибо, мы скоро свяжемся с вами!</p>
+			</div>
+		</div>
+	</div>
+	<header class="header" id="main" style="background: url('images/hero-image.png') center center no-repeat; background-size:cover;">
+		<div class="container">
+			<div class="header__items">
+				<div class="header__logo">
+					<a href="/"><img class="header__pic" src="images/LOGO.svg" alt=""></a>
+				</div>
+				<div class="header__wrapbtn">
+					<span class="header__buttonmenu">&#9776;</span>
+				</div>
+				<div class="header__menu">
+					<ul class="header__navs">
+						<li><a href="#" class="header__nav">Главная</a></li>
+						<li><a href="#menu" class="header__nav">Меню</a></li>
+						<li><a href="#about" class="header__nav">О нас</a></li>
+						<li><a href="#feedback" class="header__nav">Отзывы</a></li>
+						<li><a href="#" class="header__nav"><img src="images/cart.svg" alt=""></a></li>
+					</ul>
+					<div class="header__order">
+						<div class="header__num">
+							<div class="header__wrap">
+								<a href="tel:+9998887654" class="header__phone">+999-888-76-54</a>
+							</div>
+							<p class="header__descr">
+								Свяжитесь с нами для бронирования
+							</p>
+						</div>
+						<a href="javascript:void(0);" class="button header__btntop">Заказ столика</a>
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="header__textbox">
+				<p class="header__suptite" data-aos="fade-up" data-aos-duration="300">Добро пожаловать в</p>
+				<h1 class="header__title" data-aos="fade-up" data-aos-duration="500">Дом еды</h1>
+				<p class="header__subtitle" data-aos="fade-up" data-aos-duration="700">Дом лучшей еды</p>
+				<a href="#dishes" class="button header__button" data-aos="fade-up" data-aos-duration="900">Блюда</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="cards">
+				<div class="cards__item" data-aos="fade-left" data-aos-duration="300">
+					<div class="cards__pic">
+						<img src="images/dish.svg" alt="">
+					</div>
+					<h3 class="cards__title">Магическая <span>Атмосфера</span></h3>
+					<p class="cards__descr">В нашем заведении царит магическая атмосфера наполненная вкусными ароматами</p>
+				</div>
+				<div class="cards__item" data-aos="fade-left" data-aos-duration="500">
+					<div class="cards__pic">
+						<img src="images/dish.svg" alt="">
+					</div>
+					<h3 class="cards__title">Лучшие <span>Блюда</span></h3>
+					<p class="cards__descr">В готовке мы используем только свежие ингридиенты, отчего блюда обретают особенный вкус</p>
+				</div>
+				<div class="cards__item" data-aos="fade-left" data-aos-duration="700">
+					<div class="cards__pic">
+						<img src="images/dish.svg" alt="">
+					</div>
+					<h3 class="cards__title">Недорогая <span>Стоимость</span></h3>
+					<p class="cards__descr">Каждый сможет найти у нас чего-то вкусненькое по своему кошельку, а так же заказать друзьям</p>
+				</div>
+			</div>
+			<div class="story" id="about">
+				<div class="story__item">
+					<h2 class="title story__title" data-aos="fade-up" data-aos-duration="300">Наша 
+						<span>История</span>
+					</h2>
+					<p class="story__descr" data-aos="fade-up" data-aos-duration="700">Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.</p>
+					<div class="story__list" data-aos="fade-up" data-aos-duration="1100">
+						<div class="story__row">
+							<span class="story__num">74</span>
+							<p class="story__name">Напитки</p>
+						</div>
+						<div class="story__row">
+							<span class="story__num">125</span>
+							<p class="story__name">Еда</p>
+						</div>
+						<div class="story__row">
+							<span class="story__num">82</span>
+							<p class="story__name">Закуски</p>
+						</div>
+						</div>
+				</div>
+				<div class="story__item" data-aos="fade-left" data-aos-duration="1500">
+						<img src="images/images.png" alt="">
+					</div>
+			</div>
+		</div>
+		<div class="lg-pic" style="background: url('images/pizza.png') center center no-repeat;
+	background-size: cover;">
+			<div class="lg-pic__items">
+				<div class="lg-pic__item">
+					<h3 class="lg-pic__title" data-aos="fade-right" data-aos-duration="300">Отпразднуйте в одном из самых лучших ресторанов</h3>
+					<p class="lg-pic__descr" data-aos="fade-right" data-aos-duration="500">Только в этом месяце бизнес-ланч от 250 ₽</p>
+				</div>
+				<div class="lg-pic__item" data-aos="fade-left" data-aos-duration="700">
+					<a href="#menu" class="button">Меню</a>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="dishes">
+			<div class="dishes">
+				<h2 class="title dishes__title"  data-aos="fade-up" data-aos-duration="300">Наши <span>Блюда</span></h2>
+				<div class="dishes__items">
+					<div class="dishes__item" data-aos="fade-right" data-aos-duration="600">
+						<img src="images/pizzalg.png" alt="">
+					</div>
+					<div class="dishes__item">
+						<div class="dishes__cards"data-aos="fade-left" data-aos-duration="800">
+
+				<div class="dishes__card" >
+					<div class="dishes__pic">
+						<img src="images/hamburger-494706_1920 1.png" alt="">
+					</div>
+					<div class="dishes__wrap">
+						<p class="dishes__name">Гамбургер Мини</p>
+						<p class="dishes__price">70</p>
+					</div>
+				</div> 		
+
+				<div class="dishes__card" >
+					<div class="dishes__pic">
+						<img src="images/coca-cola-koka-kola-kola.jpg" alt="">
+					</div>
+					<div class="dishes__wrap">
+						<p class="dishes__name">Кока-кола 1л</p>
+						<p class="dishes__price">90</p>
+					</div>
+				</div>
+
+				<div class="dishes__card" >
+					<div class="dishes__pic">
+						<img src="images/2-1ec6c2ee6043288f27cdc29e9d4e560a.jpg" alt="">
+					</div>
+					<div class="dishes__wrap">
+						<p class="dishes__name">Суши 12шт</p>
+						<p class="dishes__price">449</p>
+					</div>
+				</div>
+
+				<div class="dishes__card" >
+					<div class="dishes__pic">
+						<img src="images/chizburger-s-govyazhej-kotletkoj-1-300x200.jpg" alt="">
+					</div>
+					<div class="dishes__wrap">
+						<p class="dishes__name">Чизбургер</p>
+						<p class="dishes__price">80</p>
+					</div>
+				</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu" style="background: url('images/bar.png') center center no-repeat; background-size: cover;">
+			<div class="container" id="menu">
+				<h2 class="menu__title" data-aos="fade-up" data-aos-duration="300"><?php the_field("menu-tt"); ?></h2>
+				<div class="menu__cards" data-aos="fade-up" data-aos-duration="500">
+
+				<div class="menu__card">
+					<div class="menu__pic">
+						<img src="images/Pitstsa-s-pomidorami-i-motstsarelloj-1.jpg" alt="">
+						<div class="menu__price">
+							<span class="menu__cost">
+								389
+							</span>
+						</div>
+					</div>
+					<h3 class="menu__name">Пицца "Veg"</h3>
+					<p class="menu__descr">Только помидоры с сыром и ничего лишнего</p>
+					<a href="#" class="menu__btn">Заказать</a>
+				</div>
+				<div class="menu__card">
+					<div class="menu__pic">
+						<img src="images/ham.png" alt="">
+						<div class="menu__price">
+							<span class="menu__cost">
+								240
+							</span>
+						</div>
+					</div>
+					<h3 class="menu__name">Гамбургер "King"</h3>
+					<p class="menu__descr">Плавленный сыр с сочной говядиной</p>
+					<a href="#" class="menu__btn">Заказать</a>
+				</div>
+				<div class="menu__card">
+					<div class="menu__pic">
+						<img src="images/p_O.jpg" alt="">
+						<div class="menu__price">
+							<span class="menu__cost">
+								420
+							</span>
+						</div>
+					</div>
+					<h3 class="menu__name">Пицца "Strong"</h3>
+					<p class="menu__descr">Пицца с колбасками и сыром</p>
+					<a href="#" class="menu__btn">Заказать</a>
+				</div>
+				<div class="menu__card">
+					<div class="menu__pic">
+						<img src="images/gamburger-v-domashnih-uslovijah-ili-bulochka-s-mjasom-1300x856-1.jpg" alt="">
+						<div class="menu__price">
+							<span class="menu__cost">
+								220
+							</span>
+						</div>
+					</div>
+					<h3 class="menu__name">Гамбургер Макси</h3>
+					<p class="menu__descr">Еще больше мяса</p>
+					<a href="#" class="menu__btn">Заказать</a>
+				</div>
+
+
+
+
+				</div>
+			</div>
+		</div>
+		<div class="feedback" id="feedback">
+			<div class="container" >
+				<div class="feedback__items" >
+					<div class="feedback__item"  data-aos="fade-up" data-aos-duration="500">
+						<p class="feedback__text">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!</p>
+						<img src="images/man.png" alt="" class="feedback__img">
+						<span class="feedback__act">Посетитель</span>
+						<span class="feedback__name">Николай</span>
+					</div>
+					<div class="feedback__item" data-aos="fade-up" data-aos-duration="500">
+						<p class="feedback__text">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!</p>
+						<img src="images/man.png" alt="" class="feedback__img">
+						<span class="feedback__act">Посетитель</span>
+						<span class="feedback__name">Николай</span>
+					</div>
+					<div class="feedback__item" data-aos="fade-up" data-aos-duration="500">
+						<p class="feedback__text">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!</p>
+						<img src="images/man.png" alt="" class="feedback__img">
+						<span class="feedback__act">Посетитель</span>
+						<span class="feedback__name">Николай</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="gallery">
+				<h2 class="gallery__title title" data-aos="fade-up" data-aos-duration="300">Галерея <span>Блюд</span></h2>
+				<div class="gallery__cards">
+					<div class="gallery__card bgl" data-aos="fade-right" data-aos-duration="500">
+						<a href="images/1.png" data-lightbox="gallery">
+							<img src="images/1.png" alt="">
+						</a>
+					</div>
+					<div class="gallery__card" data-aos="fade-up" data-aos-duration="700">
+						<a href="images/4.jpg" data-lightbox="gallery">
+							<img src="images/4.jpg" alt="">
+						</a>
+					</div>
+					<div class="gallery__card" data-aos="fade-right" data-aos-duration="900">
+						<a href="images/5.jpg" data-lightbox="gallery">
+							<img src="images/5.jpg" alt="">
+						</a>
+					</div>
+					<div class="gallery__card" data-aos="fade-left" data-aos-duration="1100">
+						<a href="images/2.png" data-lightbox="gallery">
+							<img src="images/2.png" alt="">
+						</a>
+					</div>
+					<div class="gallery__card" data-aos="fade-up" data-aos-duration="1400">
+						<a href="images/3.png" data-lightbox="gallery">
+							<img src="images/3.png" alt="">
+						</a>
+					</div>
+					<div class="gallery__card bgr" data-aos="fade-left" data-aos-duration="1700">
+						<a href="images/6.jpg" data-lightbox="gallery">
+							<img src="images/6.jpg" alt="">
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="cookers">
+				<h2 class="title cookers__title" data-aos="fade-up" data-aos-duration="300">Наши <span>Повора</span></h2>
+				<div class="cookers__items">
+					<div class="cookers__item" data-aos="fade-up" data-aos-duration="500">
+						<img src="images/cook-196932_1920 1.png" alt="">
+						<div class="cookers__text">
+							<h3 class="cookers__name title">Повар <span>Зинаида</span></h3>
+							<p class="cookers__descr">Зинаида отвечает за все приготовленные блюда, за исключением пиццы, от этого они получаются у нее такими восхитительными </p>
+						</div>
+					</div>
+					<div class="cookers__item" data-aos="fade-up" data-aos-duration="700">
+						<img src="images/cook3.png" alt="">
+						<div class="cookers__text">
+							<h3 class="cookers__name title">Пиццамейкер <span>Заир</span></h3>
+							<p class="cookers__descr">Только Заир умеет готовить такую вкусную пиццу, которая так и тает во рту</p>
+						</div>
+					</div>
+					<div class="cookers__item" data-aos="fade-up" data-aos-duration="900">
+						<img src="images/cook2.png" alt="">
+						<div class="cookers__text">
+							<h3 class="cookers__name title"> Менеджер <span>Семён</span></h3>
+							<p class="cookers__descr">Благодаря Семену и его колегами, вы получите заказ быстро, отчего он даже не успеет остыть</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<img src="images/st-826688_1920 1.png" alt="">
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$(window).on('load', function () {
+    		$preloader = $('.preloadOverlay'),
+    		$loader = $preloader.find('.preload');
+    		$loader.fadeOut();
+    		$preloader.delay(350).fadeOut('slow');
+ 	 	});
+	</script>
+	<script src="js/script.js"></script>
+	<script src="js/lightbox.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script> AOS.init();</script>
+</body>
+</html>
