@@ -2022,6 +2022,12 @@ a {
 		-ms-grid-row: 6;
 		-ms-grid-column: 1;
 	}
+	.form__list > label {
+		font-size: 16px;
+	}
+	.input__item {
+		font-size: 11px;
+	}
 }
 @font-face {
 	font-family: "Gilroy";
